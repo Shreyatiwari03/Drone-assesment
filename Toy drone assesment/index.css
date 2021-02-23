@@ -1,0 +1,141 @@
+body{margin-left: 25%; font-family: Arial; margin-top: 1%; background-color:lightgray;}
+
+#directionGroup {display: none;}
+
+#tenxtenSquare{
+  margin-bottom:10px;
+  background-image: url(https://i.pinimg.com/originals/6d/df/89/6ddf89a95cc31286387b11c64c1991a8.jpg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  width:700px ;
+ 
+  border: solid black;
+  margin-left: -1%;
+}
+
+table tr td {
+  height:62px;
+  width:60px;
+}
+.attackClass{
+  
+  background-image: url(https://media1.giphy.com/media/26BRx71hqRexBe7Wo/giphy.gif);
+  background-repeat: no-repeat; 
+  background-size: contain;
+  width: 5px; 
+  height: 5px;
+}
+.button {
+    
+    padding: 10px 25px;     
+          font-size: 20px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: rgb(4, 9, 73);
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 5px #606060;
+          /*margin-left:5%;*/
+}
+
+.button:active{
+  background-color: #4F4F4F;
+          box-shadow: 0 5px #1E1E1E;
+          transform: translateY(4px);
+}
+
+label
+{
+    font-family: Optima;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+select {
+     /* margin: 50px; */
+    width: 85px;
+    padding: 0px 0px 2px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 36px;
+    background: #eee
+}
+
+
+
+
+
+select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+#directionContainer{
+  padding-left:50px; 
+  display:inline-block; 
+  margin-left: 30px;
+}
+
+.box-wrapper {
+  width: 100px;
+  height: 100px;
+      float: left;
+    padding-left: 50px;
+}
+
+.horizontal-line {
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+}
+.vertical-line {
+    position: relative;
+    background-color: #000;
+    width: 2px;
+    height: 100%;
+    left: 47%;
+    top: 0;
+}
+.horizontal-line::before, .horizontal-line::after, .vertical-line::before, .vertical-line::after{
+  font-size: 15px;
+  position: absolute;
+  /*margin-right: 2%;*/
+}
+
+.horizontal-line::before {
+    content: "E";
+    top: 3px;
+}
+.horizontal-line::after {
+    content: "W";    
+    top: 3px;    
+    right: 0;
+}
+.vertical-line::before {
+    content: "N";
+    left: 5px;
+}
+.vertical-line::after {
+    content: "S";
+    bottom: 5px;
+    left:5px;
+}
+.displayDReport{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
+  float:left;
+  background-color:white; 
+
+}
+.displayDReport:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 16px 16px;
+}
